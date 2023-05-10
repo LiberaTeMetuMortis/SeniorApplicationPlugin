@@ -1,0 +1,115 @@
+database:
+  name: "database"
+  host: "localhost"
+  port: 3306
+  username: "username"
+  password: "password"
+
+wand:
+  data: 0
+  material: "STICK"
+  name: "Wand"
+  lore:
+    - "This is a wand"
+    - "which is used for"
+    - "creating regions"
+
+usages:
+  create: "/region create <regionName>"
+  add: "/region add <regionName> <username>"
+  remove: "/region remove <regionName> <username>"
+
+messages:
+  no-permission: "&cYou don't have permission to do that!"
+  no-regions: "&cYou don't have any regions!"
+  cant-select: "&cYou can't select a place in another region."
+  area-intersects: "&cThe area you are trying to claim intersects with another region!"
+  no-area-selected: "&cYou have to select an area first!"
+  not-a-player: "&cYou have to be a player to do that!"
+  region-exists: "&cYou already have a region with that name!"
+  region-created: "&aYou have successfully created a region!"
+  region-not-found: "&cYou don't have a region with that name!"
+  already-whitelisted: "&cThat player is already whitelisted!"
+  not-whitelisted: "&cThat player is not whitelisted!"
+  unwhitelisted: "&aYou have successfully unwhitelisted that player!"
+  no-access: "&cYou don't have access to do anything in this region!"
+  rename: "&aWrite the new name in chat!"
+  renamed: "&aYou have successfully renamed the region!"
+  resize: "&aSelect a new area!"
+  resized: "&aYou have successfully resized the region!"
+  whitelist-add: "&aWrite the name of the player in chat!"
+  whitelist-added: "&aYou have successfully whitelisted that player!"
+  whitelist-remove: "&aWrite the name of the player in chat!"
+  whitelist-removed: "&aYou have successfully unwhitelisted that player!"
+  cancelled: "&cCancelled!"
+  first-pos-selected: "&aYou have successfully selected the first position!"
+  second-pos-selected: "&aYou have successfully selected the second position!"
+  gave-wand: "&aYou have successfully received the wand!"
+  player-not-found: "&cThat player doesn't exist!"
+
+
+whitelist:
+  title: "&a&lWhitelisteds:"
+  entry: "&e- &f%player%"
+
+gui:
+  edit:
+    title: "&a&lEdit region"
+    rename:
+      material: "PAPER"
+      name: "&aRename region"
+      lore:
+        - "&f"
+        - "&eClick to rename"
+      slot: 10
+    resize:
+        material: "BLAZE_ROD"
+        name: "&aResize region"
+        lore:
+            - "&f"
+            - "&eClick to resize"
+        slot: 12
+    whitelist_add:
+      material: "LIME_STAINED_GLASS_PANE"
+      name: "&aWhitelist player"
+      lore:
+          - "&f"
+          - "&eClick to whitelist"
+      slot: 14
+    whitelist_remove:
+      material: "RED_STAINED_GLASS_PANE"
+      name: "&cUnwhitelist player"
+      lore:
+          - "&f"
+          - "&eClick to unwhitelist"
+      slot: 16
+    filler:
+      material: "GRAY_STAINED_GLASS_PANE"
+      name: "&f"
+      lore:
+        - "&f"
+  regions:
+    title: "&a&lRegions"
+    entry:
+     material: "GRASS_BLOCK"
+     name: "&a%region%"
+     lore:
+         - "&f"
+         - "&eWhitelisted: &f%whitelisted%"
+         - "&f"
+         - "&eClick to edit"
+    previous-page:
+      material: "ARROW"
+      name: "&aPrevious page"
+      lore:
+        - "&f"
+    next-page:
+        material: "ARROW"
+        name: "&aNext page"
+        lore:
+            - "&f"
+    filler:
+      material: "GRAY_STAINED_GLASS_PANE"
+      name: "&f"
+      lore:
+        - "&f"

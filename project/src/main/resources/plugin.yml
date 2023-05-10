@@ -1,0 +1,8 @@
+version: "1.0"
+name: "Region"
+main: "com.github.liberatemetumortis.region.Main"
+api-version: "1.19"
+commands:
+  region:
+    description: "Main command of Region plugin"
+    usage: "/region <subcommand>"

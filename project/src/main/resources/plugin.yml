@@ -6,3 +6,5 @@ commands:
   region:
     description: "Main command of Region plugin"
     usage: "/region <subcommand>"
+libraries:
+  - org.jetbrains.kotlin:kotlin-stdlib:1.8.0

@@ -26,6 +26,6 @@ class Main : JavaPlugin() {
     }
 
     override fun onDisable() {
-        TODO("Plugin shutdown logic")
+        db.closeConnection()
     }
 }

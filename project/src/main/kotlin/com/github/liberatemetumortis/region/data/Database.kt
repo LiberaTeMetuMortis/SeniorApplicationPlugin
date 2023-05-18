@@ -93,4 +93,8 @@ class Database(val path: String, val plugin: Main) {
             }
         }.runTaskAsynchronously(plugin)
     }
+
+    fun closeConnection() {
+        connection.close()
+    }
 }

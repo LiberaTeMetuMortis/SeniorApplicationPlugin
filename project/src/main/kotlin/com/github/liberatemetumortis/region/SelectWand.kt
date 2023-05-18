@@ -14,13 +14,13 @@ class SelectWand(val config: FileConfiguration) {
         val material = Material.getMaterial(section.getString("material")!!)
         val name = section.getString("name")!!.translateColors()
         val lore = section.getStringList("lore").map { it.translateColors() }
-        val data = section.getInt("data")
+        val itemData = section.getInt("data")
         if (material == null) {
             throw Exception("Material not found")
         }
         val itemStack = ItemStack(material, 1)
         val itemMeta = itemStack.itemMeta
-        (itemMeta as? Damageable)?.damage = data
+        (itemMeta as? Damageable)?.damage = itemData
         itemMeta?.displayName(name)
         itemMeta?.lore(lore)
         itemStack.itemMeta = itemMeta
